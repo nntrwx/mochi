@@ -14,7 +14,6 @@ function Ritual() {
           <div className="ritual-card ritual-card-cleanse reveal reveal-delay-2">
             <div className="ritual-card-overlay"></div>
             <div className="ritual-card-content">
-              <span className="ritual-card-number">01</span>
               <h3 className="ritual-card-title">cleanse</h3>
               <p className="ritual-card-desc">
                 massage bounce cleanse jelly onto dry skin, add water, rinse.
@@ -26,7 +25,6 @@ function Ritual() {
           <div className="ritual-card ritual-card-hydrate reveal reveal-delay-3">
             <div className="ritual-card-overlay"></div>
             <div className="ritual-card-content">
-              <span className="ritual-card-number">02</span>
               <h3 className="ritual-card-title">hydrate</h3>
               <p className="ritual-card-desc">
                 pat 3–4 drops of dew bounce serum into damp skin.
@@ -38,7 +36,6 @@ function Ritual() {
           <div className="ritual-card ritual-card-seal reveal reveal-delay-4">
             <div className="ritual-card-overlay"></div>
             <div className="ritual-card-content">
-              <span className="ritual-card-number">03</span>
               <h3 className="ritual-card-title">seal</h3>
               <p className="ritual-card-desc">
                 press cloud bounce cream in upward motions until it disappears.

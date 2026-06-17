@@ -1,74 +1,71 @@
 /* Hero Section */
 .hero-section {
-  min-height: calc(100vh - 126px);
+  min-height: calc(100vh - 116px);
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 120px 40px 160px;
+  padding: 80px 20px 120px;
   position: relative;
   box-sizing: border-box;
 }
 
 .hero-container {
   width: 100%;
-  max-width: 960px;
+  max-width: 900px;
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
-  gap: 48px;
+  gap: 40px;
 }
 
 .hero-text-wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 24px;
-  animation: heroTextFadeUp 1.2s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+  gap: 16px;
+  animation: heroTextFadeUp 1s cubic-bezier(0.25, 1, 0.5, 1) forwards;
 }
 
 .hero-category {
   font-family: var(--font-body);
-  font-weight: 500;
-  font-size: 11px;
-  letter-spacing: 0.2em;
-  text-transform: uppercase;
+  font-weight: 400;
+  font-size: clamp(20px, 3.5vw, 32px);
+  letter-spacing: -0.06em;
+  text-transform: lowercase;
   color: var(--text);
-  opacity: 0.5;
 }
 
 .hero-title {
   font-family: var(--font-title);
-  font-weight: 300;
-  font-size: clamp(42px, 7vw, 76px);
+  font-weight: 700;
+  font-size: clamp(38px, 6.5vw, 64px);
   line-height: 1.05;
-  letter-spacing: -0.04em;
+  letter-spacing: -0.06em;
   text-transform: lowercase;
   color: var(--text);
   margin: 0;
-  max-width: 860px;
+  max-width: 839px;
 }
 
 .hero-subtitle {
-  font-family: var(--font-title);
+  font-family: var(--font-body);
   font-weight: 400;
-  font-size: clamp(20px, 3.5vw, 28px);
-  line-height: 1.35;
-  letter-spacing: -0.01em;
+  font-size: clamp(16px, 3vw, 28px);
+  line-height: 1.3;
+  letter-spacing: -0.05em;
   text-transform: lowercase;
   color: var(--text);
-  margin: 4px 0 0;
-  max-width: 760px;
-  font-style: italic;
-  opacity: 0.9;
+  margin: 8px 0 0;
+  max-width: 804px;
 }
 
 .hero-actions {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 24px;
-  animation: heroActionsFadeUp 1.4s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+  gap: 20px;
+  animation: heroActionsFadeUp 1.2s cubic-bezier(0.25, 1, 0.5, 1) forwards;
 }
 
 .btn-discover {
@@ -76,15 +73,15 @@
   align-items: center;
   justify-content: center;
   width: 240px;
-  height: 48px;
-  background: var(--text);
-  border: 1px solid var(--text);
-  border-radius: 0;
+  height: 52px;
+  background: var(--accent);
+  border: 0.8px solid var(--bg);
+  border-radius: 8px;
   font-family: var(--font-body);
-  font-weight: 400;
-  font-size: 12px;
-  letter-spacing: 0.15em;
-  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 18px;
+  letter-spacing: -0.05em;
+  text-transform: lowercase;
   color: var(--bg);
   transition: var(--transition-smooth);
 }
@@ -92,29 +89,30 @@
 .btn-discover:hover {
   background: transparent;
   color: var(--text);
+  border-color: var(--text);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-subtle);
 }
 
 .hero-quiz-link {
   font-family: var(--font-body);
   font-weight: 400;
-  font-size: 11px;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
+  font-size: 18px;
+  letter-spacing: -0.05em;
+  text-transform: lowercase;
   color: var(--text);
+  text-decoration: underline;
   transition: var(--transition-smooth);
-  border-bottom: 1px solid rgba(26, 26, 26, 0.2);
-  padding-bottom: 2px;
 }
 
 .hero-quiz-link:hover {
-  opacity: 0.7;
-  border-bottom-color: var(--text);
+  transform: translateX(4px);
 }
 
 @keyframes heroTextFadeUp {
   from {
     opacity: 0;
-    transform: translateY(24px);
+    transform: translateY(30px);
   }
   to {
     opacity: 1;
@@ -125,7 +123,7 @@
 @keyframes heroActionsFadeUp {
   from {
     opacity: 0;
-    transform: translateY(32px);
+    transform: translateY(40px);
   }
   to {
     opacity: 1;
@@ -135,11 +133,11 @@
 
 @media (max-width: 768px) {
   .hero-section {
-    min-height: calc(100vh - 106px);
-    padding: 80px 24px 100px;
+    min-height: calc(100vh - 96px);
+    padding: 60px 20px 80px;
   }
   
   .hero-container {
-    gap: 36px;
+    gap: 28px;
   }
 }
