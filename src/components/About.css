@@ -1,8 +1,8 @@
 /* Problem / Hook Section */
 .problem-section {
   width: 100%;
-  border-top: 3px solid #000000;
-  border-bottom: 3px solid #000000;
+  border-top: 1px solid var(--border-color);
+  border-bottom: 1px solid var(--border-color);
   background-color: var(--bg);
 }
 
@@ -10,13 +10,13 @@
   display: flex;
   flex-direction: row;
   width: 100%;
-  min-height: 690px;
+  min-height: 720px;
   align-items: stretch;
 }
 
 .problem-left-col {
   width: 55%;
-  padding: 80px 40px 80px 67px;
+  padding: 100px 60px 100px 80px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -25,47 +25,48 @@
 
 .problem-tag {
   font-family: var(--font-body);
-  font-weight: 400;
-  font-size: 20px;
-  letter-spacing: -0.06em;
-  text-transform: lowercase;
+  font-weight: 500;
+  font-size: 11px;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
   color: var(--text);
-  margin-bottom: 16px;
+  opacity: 0.5;
+  margin-bottom: 20px;
 }
 
 .problem-title {
   font-family: var(--font-title);
-  font-weight: 700;
-  font-size: clamp(28px, 4.5vw, 40px);
-  line-height: 1.1;
-  letter-spacing: -0.06em;
+  font-weight: 300;
+  font-size: clamp(34px, 5vw, 52px);
+  line-height: 1.15;
+  letter-spacing: -0.03em;
   text-transform: lowercase;
   color: var(--text);
-  margin: 0 0 24px;
+  margin: 0 0 28px;
 }
 
 .problem-description {
   font-family: var(--font-body);
-  font-weight: 400;
-  font-size: clamp(18px, 2.8vw, 32px);
-  line-height: 1.25;
-  letter-spacing: -0.06em;
-  text-transform: lowercase;
+  font-weight: 300;
+  font-size: clamp(16px, 2.2vw, 20px);
+  line-height: 1.6;
+  letter-spacing: -0.01em;
   color: var(--text);
-  margin: 0 0 40px;
-  max-width: 580px;
+  margin: 0 0 48px;
+  max-width: 620px;
+  opacity: 0.85;
 }
 
 .highlight-text {
-  color: #4A607A;
-  font-weight: 700;
+  color: var(--accent);
+  font-weight: 500;
 }
 
-/* Glassmorphism Chips */
+/* Minimalist Luxury Chips */
 .problem-chips-container {
   display: flex;
   flex-direction: column;
-  gap: 19px;
+  gap: 16px;
   width: 100%;
 }
 
@@ -73,62 +74,62 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding: 0 20px;
+  padding: 0 24px;
   gap: 16px;
-  height: 52px;
-  background: rgba(249, 182, 182, 0.45);
-  border: 0.8px solid rgba(255, 255, 255, 0.75);
-  backdrop-filter: blur(8px);
-  border-radius: 8px;
-  box-shadow: 0px 4px 12px rgba(107, 88, 88, 0.1);
+  height: 48px;
+  background: #FAF9F5;
+  border: 1px solid rgba(26, 26, 26, 0.1);
+  border-radius: 0;
+  box-shadow: none;
   transition: var(--transition-smooth);
 }
 
 .chip-dermatologist {
-  width: 394px;
+  width: 420px;
 }
 
 .chip-texture {
-  width: 291px;
+  width: 310px;
 }
 
 .chip-hydration {
-  width: 248px;
+  width: 260px;
 }
 
 .problem-chip:hover {
-  transform: translateX(8px) translateY(-1px);
-  background: rgba(249, 182, 182, 0.55);
-  box-shadow: 0px 6px 16px rgba(107, 88, 88, 0.18);
+  transform: translateX(8px);
+  border-color: var(--text);
+  background: #FFFFFF;
 }
 
 .chip-icon-wrapper {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 24px;
-  height: 24px;
+  width: 20px;
+  height: 20px;
   flex-shrink: 0;
 }
 
 .chip-icon-lucide {
-  color: #7B5757;
+  color: var(--accent);
+  stroke-width: 1.5px;
 }
 
 .chip-text {
   font-family: var(--font-body);
   font-weight: 400;
-  font-size: 20px;
-  line-height: 1;
-  letter-spacing: -0.06em;
+  font-size: 14px;
+  letter-spacing: 0.02em;
   text-transform: lowercase;
-  color: #6B5858;
+  color: var(--text);
+  opacity: 0.85;
 }
 
 /* Section Divider */
 .problem-divider {
-  width: 3px;
-  background-color: #000000;
+  width: 1px;
+  background-color: var(--border-color);
   flex-shrink: 0;
   align-self: stretch;
 }
@@ -138,7 +139,7 @@
   width: 45%;
   overflow: hidden;
   display: flex;
-  background-color: #eee;
+  background-color: #FAF9F5;
 }
 
 .problem-image {
@@ -155,49 +156,46 @@
   
   .problem-left-col {
     width: 100%;
-    padding: 60px 40px;
+    padding: 80px 40px;
   }
   
   .problem-divider {
     height: 1px;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.1);
-    margin: 30px 0;
+    background-color: var(--border-color);
+    margin: 40px 0;
   }
   
   .problem-right-col {
     width: 100%;
-    height: 480px;
+    height: 540px;
   }
   
   .problem-chip {
     width: 100%;
-    max-width: 420px;
+    max-width: 440px;
   }
 }
 
 @media (max-width: 768px) {
   .problem-left-col {
-    padding: 40px 20px;
+    padding: 60px 24px;
   }
   
   .problem-chip {
     width: 100%;
     max-width: 100%;
-    height: auto;
-    min-height: 52px;
-    padding: 12px 20px;
+    height: 48px;
+    padding: 0 16px;
   }
   
   .chip-text {
-    font-size: 16px;
-    line-height: 1.2;
+    font-size: 13px;
   }
   
   .problem-right-col {
-    height: 320px;
-    width: calc(100% - 40px);
-    margin: 0 20px 40px;
-    border-radius: 16px;
+    height: 360px;
+    width: calc(100% - 48px);
+    margin: 0 24px 60px;
   }
 }
