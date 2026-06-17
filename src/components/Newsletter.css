@@ -84,7 +84,7 @@
 
 .newsletter-input:focus {
   border-color: var(--accent);
-  box-shadow: 6px 4px 16px rgba(171, 197, 229, 0.35);
+  box-shadow: 6px 4px 16px rgba(244, 186, 197, 0.3);
 }
 
 .newsletter-input::placeholder {
@@ -98,13 +98,13 @@
   border: none;
   border-radius: 24px;
   font-family: var(--font-body);
-  font-weight: 400;
+  font-weight: 700;
   font-size: 20px;
   letter-spacing: -0.05em;
   text-transform: lowercase;
-  color: #FAFAF7;
+  color: var(--text);
   cursor: pointer;
-  box-shadow: 6px 4px 12px rgba(0, 0, 0, 0.15);
+  box-shadow: 6px 4px 12px rgba(244, 186, 197, 0.2);
   transition: var(--transition-smooth);
   display: flex;
   align-items: center;
@@ -113,8 +113,13 @@
 
 .btn-subscribe:hover {
   transform: translateY(-2px);
-  box-shadow: 6px 6px 16px rgba(0, 0, 0, 0.22);
-  background-color: #9ab9df;
+  box-shadow: 6px 6px 16px rgba(244, 186, 197, 0.35);
+  background-color: var(--accent-light);
+}
+
+.btn-subscribe:focus-visible {
+  outline: 2px solid var(--text);
+  outline-offset: 2px;
 }
 
 .btn-subscribe:active {
@@ -194,13 +199,13 @@
   position: absolute;
   top: 4px;
   right: 4px;
-  background: #A3D8C9;
-  color: #FAFAF7;
+  background: var(--accent-light);
+  color: var(--text);
   border-radius: 50%;
   padding: 4px;
   width: 24px;
   height: 24px;
-  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.12);
+  box-shadow: 2px 2px 6px rgba(244, 186, 197, 0.25);
   z-index: 2;
   animation: successPop 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.2s forwards;
   transform: scale(0);

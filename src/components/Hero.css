@@ -75,14 +75,14 @@
   width: 240px;
   height: 52px;
   background: var(--accent);
-  border: 0.8px solid var(--bg);
+  border: 0.8px solid var(--accent);
   border-radius: 8px;
   font-family: var(--font-body);
   font-weight: 700;
   font-size: 18px;
   letter-spacing: -0.05em;
   text-transform: lowercase;
-  color: var(--bg);
+  color: var(--text);
   transition: var(--transition-smooth);
 }
 
@@ -94,6 +94,11 @@
   box-shadow: var(--shadow-subtle);
 }
 
+.btn-discover:focus-visible {
+  outline: 2px solid var(--text);
+  outline-offset: 2px;
+}
+
 .hero-quiz-link {
   font-family: var(--font-body);
   font-weight: 400;
@@ -102,6 +107,7 @@
   text-transform: lowercase;
   color: var(--text);
   text-decoration: underline;
+  display: inline-block;
   transition: var(--transition-smooth);
 }
 

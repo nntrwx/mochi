@@ -6,14 +6,15 @@ html {
 
 :root {
   --bg: #FAFAF7;
-  --accent: #ABC5E5;
-  --text: #000000;
+  --accent: #F4BAC5; /* Soft pastel pink */
+  --accent-light: #F7D2C4; /* Soft apricot-peach */
+  --text: #1C1A1A; /* Charcoal-black */
   --font-logo: 'Unbounded', sans-serif;
   --font-title: 'Unbounded', sans-serif;
   --font-body: 'Gothic A1', sans-serif;
   
-  --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-  --shadow-subtle: 0 4px 20px rgba(171, 197, 229, 0.15);
+  --transition-smooth: all 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+  --shadow-subtle: 0 6px 24px rgba(244, 186, 197, 0.1);
 }
 
 body {
@@ -40,5 +41,15 @@ body {
 a {
   color: inherit;
   text-decoration: none;
+}
+
+#about, #shop, #routine, #quiz {
+  scroll-margin-top: 80px;
+}
+
+@media (max-width: 768px) {
+  #about, #shop, #routine, #quiz {
+    scroll-margin-top: 60px;
+  }
 }
 

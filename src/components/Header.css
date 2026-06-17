@@ -18,8 +18,8 @@
   background-color: rgba(250, 250, 247, 0.85);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
-  border-bottom: 0.8px solid rgba(0, 0, 0, 0.08);
+  box-shadow: 0 4px 20px rgba(28, 26, 26, 0.04);
+  border-bottom: 0.8px solid rgba(28, 26, 26, 0.08);
 }
 
 .header-container {
@@ -84,11 +84,11 @@
 
 .nav-item.active {
   font-weight: 700;
-  color: #4A607A;
+  color: var(--text);
 }
 
 .nav-item.active::after {
-  background-color: #4A607A;
+  background-color: var(--accent);
 }
 
 /* Shop Now Button */
@@ -99,14 +99,14 @@
   width: 100px;
   height: 28px;
   background: var(--accent);
-  border: 0.8px solid var(--bg);
+  border: 0.8px solid var(--accent);
   border-radius: 8px;
   font-family: var(--font-body);
-  font-weight: 400;
+  font-weight: 700;
   font-size: 14px;
   letter-spacing: -0.05em;
   text-transform: lowercase;
-  color: var(--bg);
+  color: var(--text);
   transition: var(--transition-smooth);
 }
 
@@ -115,6 +115,11 @@
   color: var(--text);
   border-color: var(--text);
   transform: translateY(-1px);
+}
+
+.btn-shop-now:focus-visible {
+  outline: 2px solid var(--text);
+  outline-offset: 2px;
 }
 
 /* Mobile Menu Button */
@@ -174,7 +179,8 @@
 .mobile-menu-overlay.open .mobile-nav-item:nth-child(4) { transition-delay: 0.34s; }
 
 .mobile-nav-item.active {
-  color: #4A607A;
+  color: var(--text);
+  border-bottom: 3px solid var(--accent);
 }
 
 .btn-mobile-shop {
@@ -191,11 +197,11 @@
   font-size: 18px;
   letter-spacing: -0.05em;
   text-transform: lowercase;
-  color: #FAFAF7;
+  color: var(--text);
   margin-top: 12px;
   opacity: 0;
   transform: translateY(20px);
-  box-shadow: 4px 4px 12px rgba(171, 197, 229, 0.25);
+  box-shadow: 4px 4px 12px rgba(244, 186, 197, 0.3);
   transition: opacity 0.4s ease, transform 0.4s cubic-bezier(0.25, 1, 0.5, 1), background-color 0.3s ease;
 }
 
@@ -206,7 +212,7 @@
 }
 
 .btn-mobile-shop:hover {
-  background-color: #8faecf;
+  background-color: var(--accent-light);
 }
 
 /* Responsive Overrides */

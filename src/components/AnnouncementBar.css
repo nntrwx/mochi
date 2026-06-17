@@ -1,12 +1,12 @@
 /* Announcement Bar Ticker */
 .announcement-bar {
   background-color: var(--accent);
-  color: var(--bg);
+  color: var(--text);
   height: 36px;
   display: flex;
   align-items: center;
   overflow: hidden;
-  border-bottom: 0.8px solid rgba(250, 250, 247, 0.3);
+  border-bottom: 0.8px solid rgba(28, 26, 26, 0.15);
   position: relative;
   z-index: 10;
 }
@@ -31,7 +31,7 @@
   letter-spacing: -0.02em;
   text-decoration: underline;
   text-transform: uppercase;
-  color: var(--bg);
+  color: var(--text);
   padding: 0 40px;
   white-space: nowrap;
 }

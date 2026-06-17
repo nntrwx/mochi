@@ -1,7 +1,7 @@
 /* Footer Section */
 .footer {
-  background-color: var(--accent);
-  color: #FAFAF7;
+  background-color: #F2E5E6;
+  color: var(--text);
   padding: 100px 40px 60px;
   width: 100%;
 }
@@ -36,7 +36,7 @@
   font-weight: 700;
   letter-spacing: -0.06em;
   text-transform: lowercase;
-  color: #FAFAF7;
+  color: var(--text);
   line-height: 0.9;
   transition: var(--transition-smooth);
   cursor: pointer;
@@ -52,7 +52,7 @@
   line-height: 1.5;
   letter-spacing: -0.05em;
   text-transform: lowercase;
-  color: rgba(250, 250, 247, 0.85);
+  color: rgba(28, 26, 26, 0.8);
   max-width: 340px;
   margin: 0;
 }
@@ -71,9 +71,9 @@
   font-weight: 700;
   letter-spacing: -0.05em;
   text-transform: lowercase;
-  color: #FAFAF7;
+  color: var(--text);
   margin: 0;
-  opacity: 0.65;
+  opacity: 0.6;
 }
 
 .footer-nav {
@@ -87,8 +87,8 @@
   font-size: 16px;
   letter-spacing: -0.05em;
   text-transform: lowercase;
-  color: #FAFAF7;
-  opacity: 0.9;
+  color: var(--text);
+  opacity: 0.85;
   transition: var(--transition-smooth);
   display: inline-block;
 }
@@ -103,7 +103,7 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  border-top: 1px solid rgba(250, 250, 247, 0.25);
+  border-top: 1px solid rgba(28, 26, 26, 0.15);
   padding-top: 36px;
 }
 
@@ -112,7 +112,7 @@
   font-size: 14px;
   letter-spacing: -0.05em;
   text-transform: lowercase;
-  color: rgba(250, 250, 247, 0.75);
+  color: rgba(28, 26, 26, 0.7);
   margin: 0;
 }
 
@@ -126,12 +126,12 @@
   font-size: 14px;
   letter-spacing: -0.05em;
   text-transform: lowercase;
-  color: rgba(250, 250, 247, 0.75);
+  color: rgba(28, 26, 26, 0.7);
   transition: var(--transition-smooth);
 }
 
 .footer-legal-links a:hover {
-  color: #FAFAF7;
+  color: var(--text);
   text-decoration: underline;
 }
 
