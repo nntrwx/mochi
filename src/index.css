@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Gothic+A1:wght@400;700&family=Unbounded:wght@400;700&display=swap');
+
+html {
+  scroll-behavior: smooth;
+}
+
+:root {
+  --bg: #FAFAF7;
+  --accent: #ABC5E5;
+  --text: #000000;
+  --font-logo: 'Unbounded', sans-serif;
+  --font-title: 'Unbounded', sans-serif;
+  --font-body: 'Gothic A1', sans-serif;
+  
+  --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  --shadow-subtle: 0 4px 20px rgba(171, 197, 229, 0.15);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--bg);
+  color: var(--text);
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
